@@ -13,6 +13,21 @@ class _jelaState extends State<jela> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Colors.white,
+      appBar: AppBar(
+        backgroundColor: const Colors.white,
+        elevation: 0,
+        leading: IconButton(
+          icon: const Icon(
+            Icons.arrow_back,
+            color: Colors.blue,
+          ),
+          onPressed: () {
+            //go to login section
+            Navigator.of(context).pop();
+          },
+        ),
+      ),
       body: Center(
         child: Container(
           child: Column(children: [
